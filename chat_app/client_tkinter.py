@@ -59,7 +59,8 @@ def send(event=None):  # event is passed by binders.
 
     """" Update chat window with current user's name/username """
     if MSG_COUNT == 0 and msg != "{quit}":
-        window.title(msg)
+        new_title = '%s\'s Chat Window' % msg
+        window.title(new_title)
 
     my_msg.set("")  # Clears input field.
     client_socket.send(bytes(msg, "utf8"))
