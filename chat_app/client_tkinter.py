@@ -79,14 +79,14 @@ def on_closing(event=None):
 
 window = tk.Tk()
 window.title("Chat Room")
-window.geometry("400x350")
+window.geometry("500x350")
 
 messages_frame = tk.Frame(window)
 my_msg = tk.StringVar()  # For the messages to be sent.
 my_msg.set("Type your messages here.")
 scrollbar = tk.Scrollbar(messages_frame)  # To navigate through past messages.
 # Following will contain the messages.
-msg_list = tk.Listbox(messages_frame, height=15, width=50,
+msg_list = tk.Listbox(messages_frame, height=15, width=60,
                    yscrollcommand=scrollbar.set)
 scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 msg_list.pack(side=tk.LEFT, fill=tk.BOTH)
