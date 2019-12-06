@@ -6,15 +6,6 @@ import tkinter as tk
 firstclick = True
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-
-#----Socket code----
-# IP = input('Enter host IP: ')
-# PORT = input('Enter port: ')
-# if not PORT:
-#     PORT = 33002
-# else:
-#     PORT = int(PORT)
-
 IP = "127.0.0.1"
 PORT = 33002
 
